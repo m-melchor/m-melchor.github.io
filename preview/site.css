@@ -544,6 +544,11 @@ html:not(.js) .car-ctl { display: none; }
   .cards:has(> .door > .card-img) .door-num b { font-size: 44px; }
   .cards:has(> .door > .card-img) .door-num.long b { font-size: 30px; }
 }
+/* A card with no photo of his: the number fills the photo's frame */
+.num-pic { display: grid; place-content: center; justify-items: center; margin: 0; }
+.num-pic b { display: block; font: 300 clamp(64px, 7vw, 96px)/1 var(--display); letter-spacing: -0.03em; }
+.num-pic span { display: block; margin-top: 6px; font-weight: 600; font-size: 15px; }
+.card .num-pic { margin-top: 0; }
 .door-ph { aspect-ratio: 4 / 3; padding: 28px; }
 .sec.mist .door-ph { background: var(--paper); }
 .doors.one { grid-template-columns: 1fr; }

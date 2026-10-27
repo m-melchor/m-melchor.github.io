@@ -129,6 +129,14 @@ figcaption { font: 400 12px/1.45 var(--ui); padding-top: 6px; }
 /* An article */
 .story { display: grid; grid-template-columns: 8fr 4fr; gap: 0 var(--gutter); padding: 24px 0 30px; }
 .story > * { min-width: 0; }
+/* A feature with no sidebar: one centered column */
+.story.solo { grid-template-columns: minmax(0, 1fr); max-width: 880px; margin: 0 auto; }
+/* A card with no photo of his: the number fills the photo's frame */
+.num-pic { aspect-ratio: 4 / 3; display: grid; place-content: center; justify-items: center; border: 1px solid var(--rule); }
+.num-pic b { display: block; font: 400 clamp(56px, 6vw, 84px)/1 var(--display); letter-spacing: -0.03em; }
+.num-pic span { display: block; margin-top: 4px; font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.about-band .archive .num-pic { aspect-ratio: 3 / 2; margin: 0 0 10px; }
+.band .archive h4.archive-sub { margin-top: 22px; }
 .story h1 { font-size: clamp(32px, 3.6vw, 48px); margin: 8px 0 12px; }
 .story .deck { font-size: 17px; margin-bottom: 10px; }
 .story figure { margin: 16px 0 16px; }
