@@ -1,0 +1,26 @@
+3:"$Sreact.fragment"
+4:"/_next/static/chunks/0umf92h1sb77c.js"
+5:I[39756,["$4"],"default"]
+6:I[37457,["$4"],"default"]
+b:I[97367,["$4"],"OutletBoundary"]
+c:"$Sreact.suspense"
+f:"ViewportBoundary"
+10:I[97367,["$4"],"$f"]
+11:"MetadataBoundary"
+12:I[97367,["$4"],"$11"]
+13:I[27201,["$4"],"IconMark"]
+8:X
+8:C
+9:X
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[null,null,["$","$Lb",null,{"children":["$","$c",null,{"name":"Next.MetadataOutlet","children":"$@d"}]}]]}],"p":"$@e","v":null,"s":"$9"}}]]
+2:[["children",{"s":"experience","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":"(os)","h":48,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":80,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L10",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#000000"}],["$","meta","3",{"name":"color-scheme","content":"dark"}]]}],["$","$L12",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$c",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Experience · Marco Melchor"}],["$","meta","1",{"name":"description","content":"Marco Melchor's experience: Halliburton, National Glass Services, Monarch Motorsports, Amar Peruvian Restaurant and Hacienda de Samotracia."}],["$","link","2",{"rel":"canonical","href":"https://m-melchor.github.io/experience/"}],["$","meta","3",{"property":"og:title","content":"Experience · Marco Melchor"}],["$","meta","4",{"property":"og:description","content":"Marco Melchor's experience: Halliburton, National Glass Services, Monarch Motorsports, Amar Peruvian Restaurant and Hacienda de Samotracia."}],["$","meta","5",{"property":"og:url","content":"https://m-melchor.github.io/experience/"}],["$","meta","6",{"property":"og:site_name","content":"Marco Melchor"}],["$","meta","7",{"property":"og:locale","content":"en_US"}],["$","meta","8",{"property":"og:image","content":"https://m-melchor.github.io/og.jpg"}],["$","meta","9",{"property":"og:image:width","content":"1200"}],["$","meta","10",{"property":"og:image:height","content":"630"}],["$","meta","11",{"property":"og:image:alt","content":"Marco Melchor, mechanical engineering at Baylor and founder of Apollo Companion™"}],["$","meta","12",{"property":"og:type","content":"website"}],["$","meta","13",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","14",{"name":"twitter:title","content":"Experience · Marco Melchor"}],["$","meta","15",{"name":"twitter:description","content":"Marco Melchor's experience: Halliburton, National Glass Services, Monarch Motorsports, Amar Peruvian Restaurant and Hacienda de Samotracia."}],["$","meta","16",{"name":"twitter:image","content":"https://m-melchor.github.io/og.jpg"}],["$","meta","17",{"name":"twitter:image:alt","content":"Marco Melchor, mechanical engineering at Baylor and founder of Apollo Companion™"}],["$","meta","18",{"name":"twitter:image:width","content":"1200"}],["$","meta","19",{"name":"twitter:image:height","content":"630"}],["$","link","20",{"rel":"icon","href":"/icon.png?icon.1o96vaybpm1iy.png","sizes":"512x512","type":"image/png"}],["$","link","21",{"rel":"apple-touch-icon","href":"/apple-icon.png?apple-icon.2-5mhqbrglvne.png","sizes":"180x180","type":"image/png"}],["$","$L13","22",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@14","v":null,"s":"$9"}},"a":"$@15","u":"$@16","b":"QOU2yLtg-ravqWj6WhaZn"}
+d:null
+16:true
+9:300
+9:C
+15:0
+7:"$undefined"
+14:"$undefined"
+e:"$undefined"

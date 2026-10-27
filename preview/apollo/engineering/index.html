@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Engineering, Apollo Companion<span class="tm">™</span></title>
+<meta name="description" content="Apollo Companion™, engineering: The architecture, the AI pipeline behind Smart Add and Apollo chat, and how every change is tested before it ships.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Marco Melchor">
+<meta property="og:locale" content="en_US">
+<meta property="og:url" content="https://m-melchor.github.io/preview/apollo/engineering/">
+<meta property="og:title" content="Engineering, Apollo Companion™">
+<meta property="og:description" content="Apollo Companion™, engineering: The architecture, the AI pipeline behind Smart Add and Apollo chat, and how every change is tested before it ships.">
+<meta property="og:image" content="https://m-melchor.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Marco Melchor, mechanical engineering at Baylor and founder of Apollo Companion™">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..600&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/preview/site.css">
+<link rel="icon" type="image/png" sizes="32x32" href="/preview/icon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/preview/icon-48.png">
+<link rel="apple-touch-icon" href="/preview/apple-touch-icon.png">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="gnav"><div class="gnav-in">
+<a class="mark" href="/preview/">Marco Melchor</a>
+<nav aria-label="Main"><ul><li><a href="/preview/about/">About</a></li><li><a href="/preview/apollo/" aria-current="page">Apollo</a></li><li><a href="/preview/engineering/">Engineering</a></li><li><a href="/preview/experience/">Experience</a></li><li><a href="/preview/leadership/">Leadership</a></li><li><a href="/preview/services/">Services</a></li><li><a href="/preview/contact/">Contact</a></li></ul></nav>
+<nav class="design-switch" aria-label="Design"><a href="/" data-design="desktop">Desktop</a><a href="/preview/" data-design="classic" aria-current="true">Classic</a><a href="/paper/" data-design="paper">Paper</a></nav>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7h14M3 13h14"/></svg><span>Menu</span></button>
+</div></header>
+<div class="menu" id="menu" hidden><nav aria-label="Menu"><a href="/preview/">Home</a><a href="/preview/about/">About</a><a href="/preview/apollo/">Apollo</a><a href="/preview/engineering/">Engineering</a><a href="/preview/experience/">Experience</a><a href="/preview/leadership/">Leadership</a><a href="/preview/services/">Services</a><a href="/preview/contact/">Contact</a></nav><div class="actions"><a class="btn solid" href="/preview/contact/">Contact</a><a class="btn line" href="/preview/resume/">Resume</a></div></div>
+<div class="lnav"><div class="lnav-in"><a class="lnav-title" href="/preview/apollo/">Apollo Companion<span class="tm">™</span></a><nav class="lnav-links" aria-label="Apollo Companion"><a href="/preview/apollo/product/">The product</a><a href="/preview/apollo/engineering/" aria-current="page">Engineering</a><a href="/preview/apollo/privacy/">Privacy and security</a><a href="/preview/apollo/shops/">Shop software</a><a href="/preview/apollo/business/">Business development</a><a href="/preview/apollo/constraints/">What it taught me</a></nav><a class="btn solid sm" href="https://apollocompanion.com" target="_blank" rel="noopener">Visit the site</a></div></div>
+<main id="main">
+<section class="hero dark pad-b">
+<h1 class="head xl">Engineering</h1>
+<p class="sub">Two app stores from one codebase, with AI that runs only when it has to</p>
+<p class="lede">The architecture, the AI pipeline behind Smart Add and Apollo chat, and how every change is tested before it ships.</p>
+<p class="meta">Engineering · Waco, Texas · June 5 to October 22, 2026</p>
+
+</section>
+<section class="sec mist"><div class="sec-head"><h2 class="head">The facts</h2></div>
+<div class="cards four"><article class="card fact rise"><div class="card-body"><p class="when">Commits, June 5 to October 22, 2026</p><h3>1,389</h3></div></article><article class="card fact rise"><div class="card-body"><p class="when">September 2026</p><h3>540 commits</h3></div></article><article class="card fact rise"><div class="card-body"><p class="when">October 1 to 22</p><h3>521 commits</h3></div></article><article class="card fact rise"><div class="card-body"><p class="when">Tests passing, October 11, 2026</p><h3>4,391</h3></div></article><article class="card fact rise"><div class="card-body"><p class="when">Pages</p><h3>86</h3></div></article><article class="card fact rise"><div class="card-body"><p class="when">API routes</p><h3>267</h3></div></article><article class="card fact rise"><div class="card-body"><p class="when">Database migrations</p><h3>341</h3></div></article></div>
+</section>
+<section class="sec"><div class="sec-head"><h2 class="head">The stack</h2></div>
+<div class="cards two"><article class="card rise"><div class="card-body"><h3>Web app</h3><p>Next.js, written in JavaScript and hosted on Vercel: 86 pages and 267 API routes.</p></div></article><article class="card rise"><div class="card-body"><h3>Database</h3><p>Postgres on Supabase. Row-level security keeps members to their own data, and about 85 tables hang off each account, so one account owns everything it created.</p></div></article><article class="card rise"><div class="card-body"><h3>Native shells</h3><p>Swift on iPhone and Kotlin on Android. Each wraps the web app in a hardened web view and adds native bridges for push and device features.</p></div></article><article class="card rise"><div class="card-body"><h3>Services</h3><p>AI models for chat, Smart Add and research. Apple and Google push. Stripe for shop billing, built and in testing.</p></div></article></div>
+</section>
+<section class="sec mist"><div class="sec-head"><h2 class="head">On my iPhone</h2></div>
+<div class="scr"><div class="scr-group"><h3 class="subh">My build</h3><div class="scr-strip"><figure class="rise"><img src="/paper/img/iphone/command.jpg" alt="Command Center on iPhone, opening on Marco's 2025 BMW M2 with parts, research and activity counts" width="326" height="706" loading="lazy" decoding="async"><figcaption>Command Center, opening on my 2025 BMW M2.</figcaption></figure><figure class="rise"><img src="/paper/img/iphone/overview.jpg" alt="Build overview for the 2025 BMW M2: build value and the next milestone" width="326" height="706" loading="lazy" decoding="async"><figcaption>Build overview: what the build is worth and the next milestone.</figcaption></figure><figure class="rise"><img src="/paper/img/iphone/howto.jpg" alt="How To: guides written for the 2025 BMW M2, with a box to ask about any job" width="326" height="706" loading="lazy" decoding="async"><figcaption>How To: step-by-step guides written for my exact car.</figcaption></figure></div></div><div class="scr-group"><h3 class="subh">Shop and share</h3><div class="scr-strip"><figure class="rise"><img src="/paper/img/iphone/marketplace.jpg" alt="The Marketplace, with parts picked for the 2025 BMW M2" width="326" height="706" loading="lazy" decoding="async"><figcaption>Marketplace: parts picked because they fit my car.</figcaption></figure><figure class="rise"><img src="/paper/img/iphone/feed.jpg" alt="The feed: a build update showing a wheel, with the parts in the post listed under it" width="326" height="706" loading="lazy" decoding="async"><figcaption>The feed: a build update with its parts tagged.</figcaption></figure></div></div></div>
+</section>
+<section class="sec">
+<details class="more wide"><summary>How it fits <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></summary><div class="dg" role="img" aria-label="The iPhone app, the Android app and web browsers all open one Next.js web app. It talks to an API layer, which reaches Postgres with row-level security, AI models, Stripe payments, and Apple and Google push.">
+<div class="dg-col"><div class="dg-box">iPhone app,<small>a Swift shell</small></div><div class="dg-box">Android app,<small>a Kotlin shell</small></div><div class="dg-box">Web browser</div></div>
+<div class="dg-arrow" aria-hidden="true"></div><div class="dg-col"><div class="dg-box">Web app,<small>Next.js</small></div></div>
+<div class="dg-arrow" aria-hidden="true"></div><div class="dg-col"><div class="dg-box">API layer</div></div>
+<div class="dg-arrow" aria-hidden="true"></div><div class="dg-col"><div class="dg-box">Postgres with row-level security</div><div class="dg-box">AI models</div><div class="dg-box">Payments,<small>Stripe</small></div><div class="dg-box">Push,<small>Apple and Google</small></div></div>
+</div></details>
+</section>
+<section class="sec mist"><div class="sec-head"><h2 class="head">The AI, engineered</h2></div>
+<div class="cards"><article class="card rise"><div class="card-body"><h3>Code first, AI last</h3><p>Smart Add tries the cheap, certain steps before any model runs: a direct link, the parts catalog, a cache, then a shopping search. AI only handles what's left, and a typed list with prices and sellers is read with no AI at all.</p></div></article><article class="card rise"><div class="card-body"><h3>Grounded in the member's car</h3><p>Before Apollo chat answers, it reads the owner's actual build through a tool, with at most two tool rounds per reply. The instructions are put together on the server, and conversations aren't stored with the AI provider.</p></div></article><article class="card rise"><div class="card-body"><h3>Fresh only when it matters</h3><p>Quick answers search the web only when a question needs current facts. If search is unavailable, the chat still answers from what it knows.</p></div></article><article class="card rise"><div class="card-body"><h3>Caching with rules</h3><p>Shopping results are kept for 6 hours, web searches for a day, and AI readings of a part or a photo for 30 days. Only cleaned-up queries are cached, and a photo's cache keeps what was found in it. The image itself isn't kept.</p></div></article><article class="card rise"><div class="card-body"><h3>One door for every model call</h3><p>Every call to a model goes through one module. Answers are forced into fixed schemas so code can check them, and behavior is tested against the live service as well as its documentation.</p></div></article></div>
+</section>
+<section class="sec">
+<details class="more wide"><summary>Decisions and tradeoffs <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></summary><div class="cards"><article class="card rise"><div class="card-body"><h3>One app in native shells</h3><p>I'm one builder shipping to two stores, so I wrapped one web app in native shells and didn't build it three times. The cost is a little less native feel. Google Play went live on September 8, 2026, and the App Store approved it on September 13, 2026.</p></div></article><article class="card rise"><div class="card-body"><h3>A push bridge for iPhone</h3><p>The iPhone shell can't use web push, so on September 14, 2026 I built a native bridge to Apple's push service. Members get the same notifications on both platforms.</p></div></article><article class="card rise"><div class="card-body"><h3>Schema as files</h3><p>Every database change is a migration file, 341 of them as of October 24, 2026, each applied with the release that needs it.</p></div></article></div></details>
+</section>
+<section class="sec mist">
+<details class="more wide"><summary>Tested before it ships <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6l5 5 5-5"/></svg></summary><div class="cards"><article class="card rise"><div class="card-body"><h3>The test suite</h3><p>4,391 tests in 440 files were passing on October 11, 2026. They guard the project's rules, like every member write going through the content filter.</p></div></article><article class="card rise"><div class="card-body"><h3>Beyond unit tests</h3><p>Lint with a cap on warnings, and three validators that read the whole codebase for broken rules before anything ships.</p></div></article><article class="card rise"><div class="card-body"><h3>The release path</h3><p>Tests, lint, the validators and a full build run before every signed-off commit. A push to main is a production deploy, so nothing reaches main without passing.</p></div></article></div></details>
+</section>
+<section class="sec"><div class="sec-head"><h2 class="head">Pace</h2></div>
+<div class="prose"><p>1,389 commits from June 5 to October 22, 2026. I designed it, made the product and engineering calls, and built it with AI coding tools, mostly Claude Code. I reviewed, tested and shipped every change.</p></div>
+</section>
+<section class="sec dark"><div class="sec-head" style="margin-bottom:0">
+<h2 class="head md">Next: Privacy and security</h2><p class="sub md">Members decide who sees their build, photos are cleaned before anyone sees them, and deleting an account deletes its data.</p>
+<div class="actions"><a class="btn solid" href="/preview/apollo/privacy/">Go to Privacy and security</a><a class="btn line" href="/preview/contact/">Get in touch</a></div></div></section>
+</main>
+<footer class="foot"><div class="foot-in">
+<nav aria-label="Footer"><a href="/preview/about/">About</a><a href="/preview/contact/">Contact</a><a href="/preview/resume/">Resume</a><a href="https://www.linkedin.com/in/marco-melchor" target="_blank" rel="noopener">LinkedIn</a><a href="/preview/services/">Services</a><a href="/preview/hobbies/">Hobbies</a></nav>
+<p>© 2026 Marco Melchor. Waco, Texas.</p>
+</div></footer>
+<script src="/preview/site.js" defer></script>
+<script src="/design-switch.js" defer></script>
+</body>
+</html>
