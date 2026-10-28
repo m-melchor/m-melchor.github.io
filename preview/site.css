@@ -43,6 +43,7 @@ h1, h2, h3, p { margin: 0; }
 .btn.sm { min-height: 34px; padding: 0 16px; font-size: 15px; }
 .btn svg { width: 16px; height: 16px; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 26px; }
+.card-body .actions { justify-content: flex-start; margin-top: 22px; }
 
 /* The global bar */
 .gnav { position: relative; z-index: 30; background: var(--paper); }
@@ -683,3 +684,133 @@ html:not(.js) .car-ctl { display: none; }
 /* Skiing: Aspen's panorama spans two cards, so seven fill the rows evenly */
 .cards.ski > :first-child { grid-column: span 2; }
 .cards.ski > :first-child .card-img { aspect-ratio: 8 / 3; }
+/* Automotive: car events and Where it led, each its own section under a hairline */
+/* Story parts: dated rows, a ruled list, labeled points and a route, so no section is one run of paragraphs */
+.z-block { max-width: var(--page); margin: 56px auto 0; }
+.z-lead { max-width: 680px; margin: 40px auto 0; font-size: 19px; line-height: 1.55; }
+.z-block > .z-lead:first-child { margin-top: 0; }
+.z-rows { max-width: 680px; margin: 18px auto 0; }
+.z-rows > div { display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 20px; align-items: baseline; padding: 18px 0; border-top: 1px solid var(--ink); }
+.z-rows > div:last-child { border-bottom: 1px solid var(--ink); }
+.z-rows dt { font: 400 34px/1 var(--display); letter-spacing: -0.02em; }
+.z-rows dd { margin: 0; font-size: 18px; line-height: 1.5; }
+.z-list { max-width: 680px; margin: 18px auto 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; }
+.z-list li { padding: 13px 0; border-top: 1px solid rgb(0 0 0 / 0.2); font-size: 17px; line-height: 1.35; }
+.dark .z-list li { border-top-color: rgb(255 255 255 / 0.28); }
+.z-steps { margin-top: 22px; }
+.z-points { max-width: var(--page); margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.z-points > div { padding-top: 20px; border-top: 1px solid var(--ink); }
+.z-points h3 { font: 400 30px/1.12 var(--display); letter-spacing: -0.01em; }
+.z-points p { margin-top: 12px; font-size: 18px; line-height: 1.55; }
+.z-pull { max-width: 760px; margin: 48px auto; padding: 0; text-align: center; font: 400 clamp(28px, 3vw, 40px)/1.22 var(--display); letter-spacing: -0.015em; }
+.hob-steps.z-steps.is-four { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 860px; }
+.z-block > .nums + .z-lead { margin-top: 48px; }
+.z-story + .z-story { margin-top: 72px; }
+.z-story > .subh { margin-bottom: 22px; }
+.z-story .z-route { max-width: 680px; margin-top: 26px; }
+.prose.z-after { margin-top: 40px; }
+@media (max-width: 734px) {
+  .z-rows > div { grid-template-columns: 76px minmax(0, 1fr); gap: 14px; }
+  .z-rows dt { font-size: 26px; }
+  .z-points { grid-template-columns: 1fr; gap: 26px; }
+  .z-points h3 { font-size: 26px; }
+  .hob-steps.z-steps.is-four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .z-pull { margin: 36px auto; text-align: left; font-size: 26px; }
+  .z-list { grid-template-columns: minmax(0, 1fr); }
+}
+/* A speed through each stage, a dated before and after, and a run of held and skipped days */
+.z-chain { max-width: 760px; margin: 26px auto 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.z-chain li { position: relative; display: grid; justify-items: center; align-content: start; gap: 8px; text-align: center; }
+.z-chain li + li::before { content: ""; position: absolute; top: 7px; left: -50%; width: 100%; height: 2px; background: var(--ink); }
+.z-chain i { position: relative; z-index: 1; width: 16px; height: 16px; border-radius: 50%; background: var(--ink); margin-bottom: 8px; }
+.z-chain li:nth-child(even) i { background: var(--paper); border: 2px solid var(--ink); }
+.z-chain b { font: 400 26px/1.1 var(--display); letter-spacing: -0.01em; }
+.z-chain span { font-size: 15px; line-height: 1.3; }
+.z-shift { max-width: 860px; margin: 0 auto; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.z-shift li { display: grid; align-content: start; gap: 10px; padding: 22px 40px 4px 0; border-top: 1px solid var(--ink); }
+.z-shift li + li { padding-left: 40px; border-left: 1px solid rgb(0 0 0 / 0.2); }
+.z-shift span { font-size: 15px; font-weight: 600; }
+.z-shift h3 { font: 400 34px/1.1 var(--display); letter-spacing: -0.015em; }
+.z-shift p { font-size: 19px; line-height: 1.5; max-width: 34ch; }
+.z-days { max-width: 680px; margin: 18px auto 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.z-days li { display: grid; justify-items: center; gap: 6px; padding: 18px 4px; border: 1px dashed rgb(0 0 0 / 0.35); border-radius: 14px; }
+.z-days li.is-held { background: #000; border: 1px solid #000; color: #fff; }
+.z-days b { font: 400 28px/1 var(--display); }
+.z-days span { font-size: 13px; font-weight: 600; }
+@media (max-width: 734px) {
+  .z-chain { grid-template-columns: minmax(0, 1fr); }
+  .z-chain li { grid-template-columns: 16px minmax(0, 1fr); justify-items: start; column-gap: 16px; row-gap: 2px; padding-bottom: 20px; text-align: left; }
+  .z-chain li + li::before { display: none; }
+  .z-chain li:not(:last-child)::after { content: ""; position: absolute; left: 7px; top: 10px; bottom: -6px; width: 2px; background: var(--ink); }
+  .z-chain i { grid-row: 1 / 3; margin: 4px 0 0; }
+  .z-shift { grid-template-columns: minmax(0, 1fr); }
+  .z-shift li, .z-shift li + li { padding: 18px 0 22px; border-left: 0; }
+  .z-shift h3 { font-size: 28px; }
+  .z-shift p { font-size: 17px; }
+  .z-days { gap: 6px; }
+  .z-days b { font-size: 21px; }
+}
+.hob-break { max-width: var(--page); margin: 88px auto 0; padding-top: 72px; border-top: 1px solid rgb(0 0 0 / 0.2); text-align: center; }
+.dark .hob-break { border-top-color: rgb(255 255 255 / 0.28); }
+.hob-break > .subh { margin-bottom: 30px; }
+.hob-wide { max-width: 980px; margin: 0 auto 36px; }
+.hob-wide img { aspect-ratio: 16 / 9; max-height: none; }
+.hob-lead { max-width: 680px; margin: 56px auto 0; font-size: 19px; line-height: 1.55; }
+.hob-break > .subh + .hob-lead { margin-top: 0; }
+.hob-steps { max-width: 980px; margin: 34px auto 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px; }
+.hob-steps li { display: grid; gap: 10px; justify-items: center; align-content: start; padding-top: 16px; border-top: 1px solid var(--ink); }
+.hob-steps b { font: 400 clamp(40px, 4.4vw, 56px)/1 var(--display); letter-spacing: -0.02em; }
+.hob-steps span { font-size: 16px; line-height: 1.35; max-width: 16ch; text-align: center; }
+.hob-stages { max-width: 760px; margin: 40px auto 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.hob-stages li { position: relative; display: grid; gap: 14px; justify-items: center; }
+.hob-stages li + li::before { content: ""; position: absolute; top: 7px; left: -50%; width: 100%; height: 2px; background: var(--ink); }
+.hob-stages i { position: relative; width: 16px; height: 16px; border-radius: 50%; background: var(--ink); }
+.hob-stages span { font-size: 16px; font-weight: 500; line-height: 1.3; }
+.hob-break .actions { margin-top: 40px; }
+@media (max-width: 699px) {
+  .hob-break { margin-top: 64px; padding-top: 48px; text-align: left; }
+  .hob-break > .subh { text-align: left; margin-left: 0; }
+  .hob-lead { margin-top: 40px; font-size: 18px; }
+  .hob-steps { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 16px; }
+  .hob-steps li { justify-items: start; }
+  .hob-steps span { text-align: left; }
+  .hob-stages span { font-size: 13px; }
+  .hob-break .actions { justify-content: flex-start; }
+}
+/* Services: a three-step row, and the fine print under a package as a ruled list */
+.hob-steps.z-steps.is-three { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 760px; }
+.card ul.fines { margin: 14px 0 0; padding-left: 0; list-style: none; }
+.card .fines li { margin: 0; padding: 9px 0; border-top: 1px solid rgb(0 0 0 / 0.15); font-size: 15px; }
+@media (max-width: 734px) {
+  .hob-steps.z-steps.is-three { grid-template-columns: minmax(0, 1fr); }
+  .hob-steps.z-steps.is-three span { max-width: none; }
+}
+
+/* A drawing in place of a photo: white line work on a literal black band */
+.card-img.card-art { display: grid; place-items: center; padding: 8% 9%; background: #000; color: #fff; }
+.card-art .rc-s { display: none; }
+.art-fig .art-band { max-width: 760px; margin: 0 auto; padding: 5% 7%; border-radius: 26px; background: #000; color: #fff; }
+.art-fig .cap { max-width: 760px; margin-left: auto; margin-right: auto; }
+/* Three phone-width screens from a demo */
+.demo-shots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; max-width: 680px; margin: 26px auto 0; padding: 0; list-style: none; }
+.demo-shots li { display: grid; gap: 6px; align-content: start; }
+.demo-shots img { width: 100%; height: auto; margin-bottom: 10px; border-radius: 16px; border: 1px solid rgb(0 0 0 / 0.14); }
+.demo-shots span { font: 400 30px/1 var(--display); letter-spacing: -0.02em; }
+.demo-shots b { font-size: 16px; font-weight: 600; line-height: 1.35; }
+.z-list.is-one { grid-template-columns: minmax(0, 1fr); }
+@media (max-width: 734px) {
+  .demo-shots { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .demo-shots img { max-width: 320px; }
+}
+/* A sub page whose hero carries its action: less air between the hero picture and the first block */
+.hero.pad-b.tight { padding-bottom: 12px; }
+.hero.tight + .sec { padding-top: 60px; }
+.hero.tight + .sec > .z-block:first-child { margin-top: 0; }
+.hero.tight .actions { margin-top: 24px; }
+.hero.tight .actions + .hero-media { margin-top: 40px; }
+@media (max-width: 734px) {
+  .hero.pad-b.tight { padding-bottom: 4px; }
+  .hero.tight + .sec { padding-top: 40px; }
+  .hero.tight .actions + .hero-media { margin-top: 28px; }
+}
+.z-lead { text-wrap: pretty; }

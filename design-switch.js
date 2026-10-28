@@ -5,7 +5,7 @@
   // The pages each design gives their own address inside a section
   const JOBS = ["halliburton", "halliburton-2025", "national-glass", "monarch", "amar", "hacienda"];
   const LEAD = ["shpe", "deans-committee", "scouting", "own-two-feet"];
-  const ENG = ["research", "coursework", "junior-design", "gear-train"];
+  const ENG = ["research", "coursework", "junior-design", "gear-train", "valve-tracker"];
   const SVC = ["sites", "apps", "ai", "care"];
   const SUBS = {
     classic: {
@@ -30,6 +30,8 @@
     // Same place, different names
     if (top === "about" && sub === "hobbies") [top, sub] = ["hobbies", undefined];
     if (top === "own-two-feet") [top, sub] = ["leadership", "own-two-feet"];
+    // The tracker demo window belongs to the Halliburton page in the other two designs
+    if (top === "parts-tracker") [top, sub] = ["experience", "halliburton"];
     return { from, top, sub };
   };
 
